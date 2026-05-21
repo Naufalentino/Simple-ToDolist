@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <meta charset="UTF-8">
+        <title>To-Do List</title> 
+        <link rel="stylesheet" content="width=device-width, initial-scale=1" href="css/style.css">
+    </head>
+    <body>
+        <video autoplay muted loop class="bg-video">
+            <source src="bg/Live Wallpaper 4K Abstract Purple Background.mp4" type="video/mp4">
+        </video>
+        <div class="pcc">
+            <div class="kotak1">
+                <div class="header">
+                    <h1 class="yo">Todo List</h1>
+                    <form id="inputForm">
+                        <input type="text" class="todo" id="t1" placeholder="Add To-Do. . ."> <input type="date" class="tgl" id="t2" placeholder="mm/dd/yyyy"> <button class="Add" id="t3" type="button" onclick='nambah()'>+</button><br>
+                        <button type="button" class="tim" onclick="filterTasks()" data-filtered="false">FILTER</button><button class="tom">CLEAR</button>
+                    <div class="tabel">
+                        <div class="head">
+                            <div class="boxx">TASK</div>
+                            <div class="boxx">DATE</div>
+                            <div class="boxx">STATUS</div>
+                            <div class="boxx">ACTIONS</div>
+                            <div class="boxx">CHECK</div>
+                        </div>
+                        <div id="dataTab">
+                            <div id="empty-Row">
+                                <span class="empty-message">Belum ada list kegiatan</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
