@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    display: flex; 
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(12, 6, 14);
+    color: rgb(174, 109, 189);
+    font-weight: bold;
+    min-height: 100vh;
+}
+
+.header {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: contrast(100%);
+}
+
+.pcc {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.kotak1 {
+    border-color: rgb(99, 80, 80);
+    border: 1px solid;
+    position: relative;
+    background-color: rgba(15, 13, 15, 0.98);
+    padding: 0px;
+    border-radius: 10px;
+    min-width: 700px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: fit-content;
+    box-shadow: 0px 0px 50px rgb(34, 24, 37);
+    align-items: center;
+    
+}
+h1{
+    text-shadow: 1px 2px 3px rgb(77, 67, 67);
+}
+
+.datatab{
+    margin: 0px;
+}
+
+
+#empty-Row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.empty-message {
+    color: rgba(146, 102, 156, 0.24);
+    font-style: italic;
+    text-align: center;
+}
+
+
+.tim , .tom{
+    margin-top: 25px;
+}
+
+
+.todo {
+    padding: 11px;
+    width: 40%;
+    
+}
+form {
+    margin-bottom: 20px;
+}
+
+.tgl {
+    font-weight: bold;
+
+}
+
+input {
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 29%;
+    font-size: 16px;
+    font-weight: 100;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    transition: box-shadow 0.5s;
+    background-color: rgb(12, 6, 14);
+    color: rgba(180, 129, 192, 0.63);
+    margin-right: 1%;
+}
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgb(190, 85, 250);
+    transition: box-shadow 1s;
+    color: white;
+}
+
+input:hover {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    transition: box-shadow 1s;
+}
+
+.Add , .tom{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(166, 7, 214);
+    color: rgba(0, 0, 0, 0.747);
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(243, 20, 213, 0.5);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.Add:hover , .tom:hover {
+    background-color: rgb(221, 111, 248);
+    box-shadow: 0 0 10px rgba(221, 111, 248);
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.tim {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(166, 7, 214);
+    color: rgba(0, 0, 0, 0.747);
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(243, 20, 213, 0.5);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-right: 60%;
+    background-color: rgba(32, 61, 61, 0.295);
+    box-shadow: 0 0 5px rgba(32, 61, 61, 0.295);
+    color: rgba(216, 191, 216, 0.685);
+}
+.tim:hover {
+    background-color: rgba(32, 61, 61, 0.555);
+    box-shadow: 0 0 10px rgba(32, 61, 61, 0.555);
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.tim[data-filtered="true"] {
+    background-color: rgb(166, 7, 214);
+    color: rgba(0, 0, 0, 0.747);
+    box-shadow: 0 0 10px rgba(243, 20, 213, 0.5);
+    margin-right: 55.8%;
+}
+
+input::placeholder {
+    font-weight: bold;
+    color: rgb(180, 129, 192, 0.63);
+}
+
+
+.yo {
+    font-weight: bold;
+}
+
+.kotak1 .tabel  {
+    border-color: rgb(87, 87, 75);
+    border-radius: 5px;
+    background-color: rgba(35, 23, 39, 0.24);
+    margin-bottom: 43px;
+    box-shadow: 0px 0px 5px rgba(14, 5, 5, 0.5);
+    max-width: 85%;
+    min-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    margin-top: 25px;
+    table-layout: auto; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word;  
+}
+th {
+    position: sticky;
+}
+
+.head{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgb(49, 28, 56);
+    width: 100%;
+    height: auto;
+}
+
+.boxx{
+    width: 20%;
+    max-width: 20%;
+    /* border: solid rgb(255, 255, 0); */
+}
+
+.task-row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.boxx1 {
+    width: 20%;
+    max-width: 20%;
+    /* border: solid rgb(255, 255, 0); */
+}
+
+.check {
+    width: 20%;
+    max-width: 20%;
+}
+
+.boxx1 button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(166, 7, 214);
+    color: rgba(0, 0, 0, 0.747);
+    box-shadow: 0 0 5px rgba(243, 20, 213, 0.5);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+td {
+    padding: 0px;
+    word-wrap: break-word;  /* Tambahkan ini */
+    overflow-wrap: break-word;  /* Tambahkan ini */
+    white-space: normal;  /* Tambahkan ini */
+}
+
+input[type="checkbox"] {
+    max-width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background-color: rgb(166, 7, 214);
+}
+
+checkbox:hover {
+    box-shadow: 0 0 5px rgba(243, 20, 213, 0.5);
+    transition: box-shadow 0.5s;
+}
+input:checked {
+    background-color: rgb(166, 7, 214);
+    border-color: rgb(166, 7, 214);
+    transition: background-color 0.5s, border-color 0.5s;
+}
