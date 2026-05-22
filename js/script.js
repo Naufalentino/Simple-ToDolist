@@ -17,6 +17,12 @@ function loadTasks() {
     }
 }
 
+// Clear tasks from localStorage
+function clearTasks() {
+    localStorage.removeItem(STORAGE_KEY);
+    loadTasks();
+}
+
 // Save tasks to localStorage
 function saveTasks() {
     const container = document.getElementById("dataTab");

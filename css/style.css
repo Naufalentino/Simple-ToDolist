@@ -71,6 +71,20 @@ h1{
     text-align: center;
 }
 
+.input-container {
+    display: flex;
+    gap: 9px;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.button-container {
+    display: flex;
+    max-width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+    /*margin-top: 20px;*/
+}
 
 .tim , .tom{
     margin-top: 25px;
@@ -79,7 +93,7 @@ h1{
 
 .todo {
     padding: 11px;
-    width: 40%;
+    width: 55%;
     
 }
 form {
