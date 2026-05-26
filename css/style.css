@@ -285,8 +285,11 @@ input:checked {
     transition: background-color 0.5s, border-color 0.5s;
 }
 
-@media (max-width: 500px) {
-    .head {
+@media (max-width: 725px) {
+    
+    .kotak1 {
+        height: 500px;
+        width: 200px;
         flex-direction: column;
         margin: 0 auto;
     }
